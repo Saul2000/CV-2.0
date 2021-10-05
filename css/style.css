@@ -51,9 +51,51 @@ nav{
 	font-size: 12px;
 	
 }
-.lang{
-	color:#292929;
+/******MULTILANGUAGE******/
+.en{
+	color:#333;
 }
+.es {
+	color: #00a1ff;
+}
+
+.check {
+	position: relative;
+	width: 50px;
+	top: -5px;
+}
+
+.check:before {
+	content:'';
+	position:absolute;
+	width:50px;
+	height:25px;
+	background:#333;
+	border-radius:25px;
+}
+
+.check:after {
+	content:'';
+	position:absolute;
+	width:25px;
+	height:25px;
+	background:#fff;
+	border-radius:25px;
+	transition:0.25s;
+	border:2px solid #333;
+	box-sizing: border-box;
+}
+
+.check:checked:after {
+	left:25px;
+	border:2px solid #00a1ff;
+}
+
+.check:checked:before{
+	background:#00a1ff;
+}
+
+/***STYLES***/
 .logo{
 	font-size: 25px;
 	font-weight: bold;
@@ -405,6 +447,7 @@ width: 100%;
 	border: none;
 	outline: none;
 	box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+	cursor: pointer;
 }
 #contact-btn button:hover{
 	background-color: #63D9FF;
@@ -457,8 +500,14 @@ width: 100%;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	cursor: pointer;
 
 }
+
+.contact-right button:hover {
+	background-color: #fff;
+}
+
 .c-l-heading{
 	font-family: calibri;
 	color:#FFFFFF;
