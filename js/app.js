@@ -6,6 +6,6 @@ function language(){
     if (id==true){
         location.href="es/index.html";
     } else {
-        location.href="../index.html";
+        location.href="https://saul2000.github.io/CV-2.0/";
     }
 }
