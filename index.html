@@ -215,19 +215,19 @@
 	</section>
 	<!--contact-form------------------->
 	<section id="contact-form">
-	<form  action="mailto:saul.gutierrez.utd@gmail.com" method="post" enctype="text/plain">
-	<!--left--------------------------------------->
+		<form action="https://formspree.io/f/xvodyjjk" method="POST" id="my-form">
+			<!--left--------------------------------------->
 	<div class="contact-left">
 	<h1 class="c-l-heading"><font style="border-bottom: 3px solid #63D9FF;">Write me</font></h1>
 	<!--name-------->
 	<div class="f-name">
 	<font >Name</font>
-	<input type="text" placeholder="Full name"/>
+	<input type="text" placeholder="Full name" name="name"/>
 	</div>
 	<!--email-------->
 	<div class="f-email">
 	<font >Email</font>
-	<input type="email" placeholder="Example@gmail.com"/>
+	<input type="email" placeholder="Example@gmail.com" name="_replyto"/>
 	</div>
 	</div>
 	<!--right------------------------------------------->
@@ -238,14 +238,15 @@
 	<textarea name="message" rows="5" cols="20" placeholder="Write me..."></textarea>
 	</div>
 	<!--submit-btn------------>
-	<button>submit</button>
+	<Button>Submit</Button>
 	</div>
 		
 	</form>
-	
+	<div id="status" class=""></div>
 	</section>
 	
 	<script src="js/app.js"></script>
+	<script src="js/main.js"></script>
 	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 	<script type="text/javascript">
 	

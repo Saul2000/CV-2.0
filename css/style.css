@@ -426,6 +426,7 @@ width: 100%;
 	box-sizing: border-box;
 	box-shadow:2px 0px 20px rgba(0,0,0,0.4); 
 }
+
 .c-b-heading{
 	font-size: 2rem;
 	color:#1E1E1E;
@@ -461,6 +462,7 @@ width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	
 }
 #contact-form form{
@@ -506,6 +508,43 @@ width: 100%;
 
 .contact-right button:hover {
 	background-color: #fff;
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+	font-family: calibri;
+}
+
+#status.success {
+    background-color: #40c3f7;
+    animation: status 4s ease forwards;
+    color: #fff;
+}
+
+#status.error {
+    background-color: #f1675d;
+    color: #fff;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;    
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;    
+    }
+    1000% {
+        opacity: 0;
+        pointer-events: none;    
+    }
 }
 
 .c-l-heading{
