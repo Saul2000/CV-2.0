@@ -4,8 +4,8 @@ check.addEventListener('click', language);
 function language(){
     let id=check.checked;
     if (id==true){
-        location.href="es/index.html";
+        location.href="C:/Users/saulg/Documents/DECIMO/Portfolio/es/index.html";
     } else {
-        location.href="https://saul2000.github.io/CV-2.0/";
+        location.href="C:/Users/saulg/Documents/DECIMO/Portfolio/index.html";
     }
 }
