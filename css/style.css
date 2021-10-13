@@ -150,9 +150,10 @@ nav{
   height: 15%;
   margin-bottom: 4em;
   position: absolute;
-	bottom:0px;
-	left: -3%;
-	border-right: 1px solid  rgba(41,41,41,0.30);
+  bottom:0px;
+  left: -3%;
+  border-right: 1px solid  rgba(41,41,41,0.30);
+  cursor: pointer;
 }
 
 .black-line::after{
