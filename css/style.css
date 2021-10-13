@@ -5,26 +5,24 @@ body{
 	padding:0px;
 	background-color:#161616;	
 }
-
 ul{
 	list-style:none;
 }
-
 a{
 	text-decoration:none;
 }
 #main{
+	padding:30px 50px;
 	position:relative;
 	width:100%;
+	height: 100vh;
 	box-sizing: border-box;
 	background-size: 1330px;
-
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("../images/bg.png");
+	background-color: #edf1fd;
 }
-
-#main video {
-    width: 100%;
-}
-
 nav{
 	display:flex;
 	justify-content: space-between;
@@ -40,8 +38,8 @@ nav{
 	box-sizing: border-box;
 	padding: 10px 50px;
 	background-color:#F4F7FF;
-	box-shadow:2px 2px 20px rgba(0,0,0,0.05); 
-	z-index: 2;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
 }
 
 .menu{
@@ -121,10 +119,9 @@ nav{
 	left: 20%;
 	top: 50%;
 	transform: translate(-20%,-50%);
-	z-index: 1;
 }
 .name p:nth-child(1),.name .details{
-	color:#000;
+	color:#6c707c;
 	font-size: 16px;
 }
 .name h1{
@@ -132,7 +129,7 @@ nav{
 	font-size: 40px;
 	margin:0px;
 	letter-spacing: 3px;
-	color:#000;
+	color:#292929;
 }
 .cv-btn{
 	width:200px;
@@ -140,14 +137,11 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #14a3d3;
-	color:#000000;
-	cursor: pointer;
-	z-index: 1;
+	background-color: #292929;
+	color:#FFFFFF;
 }
 .cv-btn:hover{
-	background-color: #13566d;
-	color: #fff;
+	background-color: #131313;
 	transition: all ease 0.5s;
 }
 .black-line {
@@ -158,7 +152,7 @@ nav{
   position: absolute;
 	bottom:0px;
 	left: -3%;
-	border-right: 2px solid  rgba(41,41,41,0.30);
+	border-right: 1px solid  rgba(41,41,41,0.30);
 }
 
 .black-line::after{
@@ -168,10 +162,9 @@ nav{
   height: 0;
   border-style: solid;
   border-width: 11px 11px 0 11px;
- border-color:  #000 transparent transparent transparent;
+ border-color:  #292929 transparent transparent transparent;
   right: -.7em;
   bottom: -2px;
-  z-index: 1;
 }
 
 
@@ -180,7 +173,6 @@ nav{
 	left: 50px;
 	bottom: 50px;
 	display: flex;
-	z-index: 1;
 
 }
 .social a{
@@ -188,11 +180,11 @@ nav{
 
 }
 .social i{
-	color:#000;
+	color:rgba(18,17,17,0.40);
 	font-size: 14px;
 }
 .social a:hover i{
-	color:#13566d;
+	color:#63D9FF;
 	transition: all ease 0.5s;
 }
 #about{
